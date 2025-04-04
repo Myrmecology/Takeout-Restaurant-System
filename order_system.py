@@ -32,6 +32,7 @@ def place_order(menu):
     while place_order:
         # TODO: Loop through the menu dictionary, extracting the food category and
         # the options for each category
+        print("What would you like to order? ")
         print_menu_heading()
         menu_selection_number = 1
         
@@ -110,7 +111,7 @@ def update_order(order, menu_selection, menu_items):
             # TODO: A prompt (input) to the customer that prints the name of the 
             # menu item to the user and asks the quantity they would like to order.
             # Store the return in a quantity variable
-            quantity = input(f"How many {item_name} would you like to order? ")
+            quantity = input(f"What quantity of {item_name} would you like? \n(This will default to 1 if number is not entered) ")
 
             # TODO: Write a conditional statement that checks if the input quantity 
             # can be converted to an integer, then converts it to an integer. 
@@ -129,7 +130,7 @@ def update_order(order, menu_selection, menu_items):
                 "Quantity": quantity
             })
         else:
-            print("Sorry, that item is not on the menu.")
+            print(f"{menu_selection} was not a menu option.")
     except ValueError:
         print("Please enter a valid menu number.")
 
