@@ -100,18 +100,18 @@ def update_order(order, menu_selection, menu_items):
     # to an integer and prints an error message if it does not
     try:
         # TODO: Convert the menu selection to an integer
-        menu_selection = int(menu_selection)
+        menu_selection_int = int(menu_selection)
 
         # TODO: Write a conditional statement that checks if the customer's input is 
         # an item on the menu and prints an error message if it is not
-        if menu_selection in menu_items:
+        if menu_selection_int in menu_items:
             # Store the item name as a variable
-            item_name = menu_items[menu_selection]["Item name"]
+            item_name = menu_items[menu_selection_int]["Item name"]
 
             # TODO: A prompt (input) to the customer that prints the name of the 
             # menu item to the user and asks the quantity they would like to order.
             # Store the return in a quantity variable
-            quantity = input(f"What quantity of {item_name} would you like? \n(This will default to 1 if number is not entered) ")
+            quantity = input(f"What quantity of {item_name} would you like? \n(This will default to 1 if number is not entered)\n")
 
             # TODO: Write a conditional statement that checks if the input quantity 
             # can be converted to an integer, then converts it to an integer. 
@@ -126,13 +126,13 @@ def update_order(order, menu_selection, menu_items):
             # "Item name", "Price", "Quantity"
             order.append({
                 "Item name": item_name,
-                "Price": menu_items[menu_selection]["Price"],
+                "Price": menu_items[menu_selection_int]["Price"],
                 "Quantity": quantity
             })
         else:
             print(f"{menu_selection} was not a menu option.")
     except ValueError:
-        print("Please enter a valid menu number.")
+        print(f"{menu_selection} was not a menu option.")
 
     # TODO: Return the updated order
     return order
