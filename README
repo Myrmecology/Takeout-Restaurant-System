@@ -1,6 +1,6 @@
 # Takeout Restaurant Order System
 
-## Project Overview
+## Project Overview This is an easy and fun project, the provided menu is just for fun
 
 This project implements a command-line interface (CLI) system that simulates a takeout restaurant ordering experience. The system is designed to facilitate order placement without requiring verbal communication, making it particularly accessible for customers with hearing or vocal impairments.
 
