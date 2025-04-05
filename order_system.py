@@ -286,32 +286,32 @@ def get_menu_dictionary():
     # Create a meal menu dictionary
     #"""
     meals = {
-        "Burrito": {
-            "Chicken": 4.49,
-            "Beef": 5.49,
-            "Vegetarian": 3.99
+        "Burrito Diarrhea": {
+            "Marshmallow": 24.49,
+            "Durian": 95.49,
+            "Licorice": 53.99
         },
-        "Rice Bowl": {
-            "Teriyaki Chicken": 9.99,
-            "Sweet and Sour Pork": 8.99
+        "Justin's Bowl": {
+            "Give Me Money": 99.99,
+            "Cow Manure": 88.99
         },
-        "Sushi": {
-            "California Roll": 7.49,
-            "Spicy Tuna Roll": 8.49
+        "Sushi Stuff": {
+            "Delaware Roll": 37.49,
+            "Butt Burning Tuna": 78.49
         },
-        "Noodles": {
-            "Pad Thai": 6.99,
-            "Lo Mein": 7.99,
-            "Mee Goreng": 8.99
+        "Random Crap": {
+            "Live Octopus": 96.99,
+            "Do Not Eat This": 27.99,
+            "Raw Eggs": 48.99
         },
         "Pizza": {
-            "Cheese": 8.99,
-            "Pepperoni": 10.99,
-            "Vegetarian": 9.99
+            "Just Dough": 28.99,
+            "Pepper and Roni": 410.99,
+            "Our Pizza Sucks": 39.99
         },
         "Burger": {
-            "Chicken": 7.49,
-            "Beef": 8.49
+            "Oh Wow, It's MEAT": 87.49,
+            "Just a Bun": 38.49
         }
     }
     """
@@ -344,7 +344,7 @@ if __name__ == "__main__":
     receipt, total_price = place_order(meals)
 
     # Print out the customer's order
-    print("This is what we are preparing for you.\n")
+    print("This is what we are preparing for you now get out.\n")
 
     # Print the receipt heading
     print_receipt_heading()
